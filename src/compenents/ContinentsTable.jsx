@@ -35,8 +35,9 @@ const ContinentsTable = () => {
           y={marker.y}
         />
       )}
+      
       <div ref={containerRef} className="h-full isolate relative">
-        <h1 className="text-3xl  font-geist text-center  mt-4">Maker your country </h1>
+      
         <img
           onClick={handleCreateMarker}
           src={world}
@@ -57,8 +58,8 @@ const ContinentsTable = () => {
           <div
             key={item.x}
             style={{
-              top: item.y,
-              left: item.x,
+              top: item.y-6,
+              left: item.x+6,
             }}
             className="z-20  flex flex-col items-center transition-all font-medium font-geist  absolute w-fit group"
           >
